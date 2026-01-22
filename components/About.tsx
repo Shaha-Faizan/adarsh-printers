@@ -11,11 +11,11 @@ const About: React.FC = () => {
                <div className="absolute top-0 -left-4 w-24 h-24 bg-orange-100 rounded-full z-0"></div>
                <div className="absolute bottom-0 -right-4 w-32 h-32 bg-indigo-50 rounded-full z-0"></div>
                <img 
-                 src="./man1.jpg" 
+                 src="man1.jpg" 
                  alt="Adarsh Printers Team" 
                  className="relative z-10 rounded-2xl shadow-xl w-full object-cover h-[400px]"
                />
-               <div className="absolute -bottom-6 -right-6 bg-indigo-900 text-white p-6 rounded-xl shadow-lg z-20">
+               <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 bg-indigo-900 text-white p-6 rounded-xl shadow-lg z-20">
                  <p className="text-4xl font-bold">Since</p>
                  <p className="text-4xl font-bold text-orange-400">2017</p>
                </div>

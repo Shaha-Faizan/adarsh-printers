@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative bg-indigo-900 min-h-screen flex items-center overflow-hidden">
+    <div className="relative bg-indigo-900 min-h-screen flex items-center overflow-hidden py-20">
       {/* Background Graphic */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-indigo-600 rounded-full blur-3xl animate-float"></div>
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       {/* Pattern Overlay */}
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <div className="reveal active">
@@ -61,15 +61,15 @@ const Hero: React.FC = () => {
                 alt="Adarsh Printers Offset Machine" 
                 className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent flex items-end p-8">
-                <div className="text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent flex items-end p-6 md:p-8">
+                <div className="text-white pr-24 md:pr-0">
                   <p className="font-bold text-xl">Precision Offset Technology</p>
                   <p className="text-sm opacity-80">Producing thousands of prints per hour</p>
                 </div>
               </div>
             </div>
-            {/* Floating elements */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl animate-bounce z-20" style={{ animationDuration: '3s' }}>
+            {/* Floating elements: Inside image on mobile, floating outside on desktop */}
+            <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 bg-white p-4 rounded-xl shadow-xl animate-bounce z-20" style={{ animationDuration: '3s' }}>
               <span className="text-3xl font-bold text-indigo-900 block">5M+</span>
               <span className="text-xs text-gray-500 uppercase font-bold">Prints Delivered</span>
             </div>
