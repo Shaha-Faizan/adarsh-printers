@@ -1,0 +1,8 @@
+
+{
+  "name": "Adarsh Printers - Aurangabad",
+  "description": "High-Quality Printing Solutions in CIDCO N-1, Aurangabad. Visiting cards, banners, offset printing, and more.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
